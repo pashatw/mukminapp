@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="46dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:src="@drawable/ic_mukminapps" />
+
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:layout_marginVertical="8dp"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="MUKMIN" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="4.5sp"
+        android:textColor="#555259"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:text="Doa. Ikhtiar. Tawakal." />
+
+    <RelativeLayout
+        android:id="@+id/btnMasuk"
+        android:layout_marginTop="42dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_solid_rounded_social2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_google"/>
+            <TextView
+                android:layout_marginLeft="24dp"
+                android:text="Masuk dengan Google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_centerVertical="true"
+            android:background="@color/separator"
+            android:layout_toLeftOf="@+id/tvAtau"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/tvAtau"
+            android:layout_centerInParent="true"
+            android:text="ATAU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_centerVertical="true"
+            android:background="@color/separator"
+            android:layout_toRightOf="@+id/tvAtau"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnDaftar"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_solid_rounded_social2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_google"/>
+            <TextView
+                android:layout_marginLeft="24dp"
+                android:text="Daftar dengan Google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#908f93"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="3.5sp"
+        android:gravity="center_horizontal"
+        android:text="Dengan mendaftarkan akun, saya menyetujui \nAturan Layanan dan Kebijakan Privasi yang tertera."
+        />
+</LinearLayout>

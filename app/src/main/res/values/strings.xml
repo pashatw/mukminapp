@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">mukminapp</string>
+
+    <string name="tab_bahasa_indonesia">BAHASA INDONESIA</string>
+    <string name="tab_english">ENGLISH</string>
+</resources>

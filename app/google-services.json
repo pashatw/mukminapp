@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "334032315138",
+    "project_id": "mukminapp-2645d",
+    "storage_bucket": "mukminapp-2645d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334032315138:android:d864e63201c33f70e2d81b",
+        "android_client_info": {
+          "package_name": "com.pasha.mukminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334032315138-s9va9fu0g5mbaiu9rjpgsc4cel9nbtsc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pasha.mukminapp",
+            "certificate_hash": "96cf0cb709b806a411cc27bc7d426d8dd5c66b77"
+          }
+        },
+        {
+          "client_id": "334032315138-q0ktipg0gommuitdvcmer52ps207603a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuN-p_FTpH9bpwYFWHOSRm_0kqK-kwsuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334032315138-q0ktipg0gommuitdvcmer52ps207603a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
