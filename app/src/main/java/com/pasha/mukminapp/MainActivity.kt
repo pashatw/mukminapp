@@ -19,7 +19,7 @@ import com.google.firebase.ktx.Firebase
 import com.pasha.mukminapp.ui.activity.HomeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
 
@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setProgressBar(progressBar)
         setAuthConfig()
         setBtnListener()
 
@@ -75,10 +76,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
+        hideProgressBar()
         if (user != null) {
             val intent = Intent(this, HomeActivity::class.java)
             intent.putExtra("user", user?.displayName)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
+            finish()
             Toast.makeText(this, "Hi "+user?.displayName, Toast.LENGTH_LONG).show()
         } else {
             //TODO : hold on
@@ -103,6 +107,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun firebaseAuthWithGoogle(idToken: String) {
+        showProgressBar()
+
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
@@ -115,6 +121,8 @@ class MainActivity : AppCompatActivity() {
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
                     updateUI(null)
                 }
+
+                hideProgressBar()
             }
     }
 
