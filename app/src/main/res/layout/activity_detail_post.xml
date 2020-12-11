@@ -54,12 +54,13 @@
                         android:fontFamily="@font/source_sans_pro_bold"
                         android:textStyle="bold"
                         android:textSize="16sp"
+                        android:lineHeight="20dp"
                         android:minLines="2"
                         android:maxLines="2"
                         android:textColor="@color/charcoal_grey"
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="4sp"
-                        tools:text="Judul Artikel Ditempatkan Disini"
+                        tools:text="Judul Artikel Ditempatkan Disini Judul Artikel Ditempatkan Disini"
                         />
                     <TextView
                         android:id="@+id/tvCategory"
@@ -69,6 +70,7 @@
                         android:fontFamily="@font/open_sans"
                         android:textStyle="normal"
                         android:textSize="10.5sp"
+                        android:lineHeight="14sp"
                         android:textColor="#908f93"
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="3.5sp"
